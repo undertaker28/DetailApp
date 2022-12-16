@@ -12,6 +12,7 @@
 		E9C1F185294CD324004EF02C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1F184294CD324004EF02C /* ViewController.swift */; };
 		E9C1F18A294CD325004EF02C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C1F189294CD325004EF02C /* Assets.xcassets */; };
 		E9C1F18D294CD325004EF02C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C1F18B294CD325004EF02C /* LaunchScreen.storyboard */; };
+		E9C1F19A294CE25C004EF02C /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C1F199294CE25C004EF02C /* Icons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E9C1F189294CD325004EF02C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C1F18C294CD325004EF02C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C1F18E294CD325004EF02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C1F199294CE25C004EF02C /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		FA97A4A9BF23AEEB448C944E /* Pods_DetailApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetailApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,7 +54,6 @@
 				E825024760408C969DFC3662 /* Pods-DetailApp.debug.xcconfig */,
 				A8CF148C4FE08D48F0B8AF28 /* Pods-DetailApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				E9C1F189294CD325004EF02C /* Assets.xcassets */,
+				E9C1F199294CE25C004EF02C /* Icons.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -179,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C1F18D294CD325004EF02C /* LaunchScreen.storyboard in Resources */,
+				E9C1F19A294CE25C004EF02C /* Icons.xcassets in Resources */,
 				E9C1F18A294CD325004EF02C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
