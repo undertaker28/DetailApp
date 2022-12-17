@@ -9,7 +9,6 @@ import UIKit
 import SnapKit
 
 class ListOfPlacesViewController: UIViewController {
-    private lazy var arrayOfImageNames = ["Apartment", "BeachAccess", "BusinessCenter", "Casino", "Checkroom", "FitnessCenter", "House", "MeetingRoom", "Spa", "Storefront"]
     private lazy var tupleOfImageNames = fillTupleOfImageNames()
     
     private lazy var tableView: UITableView = {
@@ -53,7 +52,7 @@ class ListOfPlacesViewController: UIViewController {
     private func fillTupleOfImageNames() -> [(imageName: String, index: Int)] {
         var tupleOfImageNames = [(String, Int)]()
         for i in 0..<1000 {
-            tupleOfImageNames.append((arrayOfImageNames[i % 10], i))
+            tupleOfImageNames.append((ImageNames.arrayOfImageNames[i % 10], i))
         }
         return tupleOfImageNames
     }

@@ -12,6 +12,7 @@
 		E9749664294E048C00674C21 /* MarkPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9749663294E048C00674C21 /* MarkPro-Bold.otf */; };
 		E9749666294E049200674C21 /* WorkSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9749665294E049200674C21 /* WorkSans-Regular.otf */; };
 		E9749668294E17CA00674C21 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9749667294E17CA00674C21 /* PlaceDetailViewController.swift */; };
+		E974966A294E66F200674C21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9749669294E66F200674C21 /* Constants.swift */; };
 		E9C1F181294CD324004EF02C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1F180294CD324004EF02C /* AppDelegate.swift */; };
 		E9C1F185294CD324004EF02C /* ListOfPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1F184294CD324004EF02C /* ListOfPlacesViewController.swift */; };
 		E9C1F18A294CD325004EF02C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C1F189294CD325004EF02C /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		E9749663294E048C00674C21 /* MarkPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Bold.otf"; sourceTree = "<group>"; };
 		E9749665294E049200674C21 /* WorkSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.otf"; sourceTree = "<group>"; };
 		E9749667294E17CA00674C21 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		E9749669294E66F200674C21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E9C1F17D294CD324004EF02C /* DetailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C1F180294CD324004EF02C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C1F184294CD324004EF02C /* ListOfPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPlacesViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				E9C1F198294CDC30004EF02C /* Assets */,
+				E9749669294E66F200674C21 /* Constants.swift */,
 				E9C1F18B294CD325004EF02C /* LaunchScreen.storyboard */,
 				E9C1F18E294CD325004EF02C /* Info.plist */,
 			);
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E974966A294E66F200674C21 /* Constants.swift in Sources */,
 				E90663AC294D0B0000D3D179 /* ListOfPlacesTableCell.swift in Sources */,
 				E9749668294E17CA00674C21 /* PlaceDetailViewController.swift in Sources */,
 				E9C1F185294CD324004EF02C /* ListOfPlacesViewController.swift in Sources */,

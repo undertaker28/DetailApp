@@ -58,10 +58,10 @@ class ListOfPlacesTableCell: UITableViewCell {
         self.addSubview(stackView)
     }
     
-    func makeConstraints() {
+    private func makeConstraints() {
         cellImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.size.width.height.equalTo(52)
+            $0.width.height.equalTo(52)
             $0.leading.equalTo(contentView).offset(20)
         }
         
