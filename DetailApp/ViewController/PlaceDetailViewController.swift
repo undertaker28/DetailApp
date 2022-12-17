@@ -15,7 +15,7 @@ class PlaceDetailViewController: UIViewController {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .cyan
+        imageView.backgroundColor = UIColor(named: "ElementsColor")
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 52
         return imageView
@@ -24,6 +24,7 @@ class PlaceDetailViewController: UIViewController {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "MarkPro-Bold", size: 26)
+        label.textColor = UIColor(named: "TitleColor")
         label.numberOfLines = 0
         return label
     }()
@@ -31,7 +32,7 @@ class PlaceDetailViewController: UIViewController {
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "WorkSans-Regular", size: 24)
-        label.textColor = UIColor.systemGray3
+        label.textColor = UIColor(named: "DescriptionColor")
         label.numberOfLines = 0
         return label
     }()
@@ -47,7 +48,7 @@ class PlaceDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "BackgroundColor")
         setupStackView()
         setupNavigationBar()
         addSubviews()
@@ -62,6 +63,7 @@ class PlaceDetailViewController: UIViewController {
     
     private func setupNavigationBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "ElementsColor") as Any]
         title = "Place info"
     }
     

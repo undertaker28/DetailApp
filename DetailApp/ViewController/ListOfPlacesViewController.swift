@@ -18,30 +18,33 @@ class ListOfPlacesViewController: UIViewController {
         tableView.register(ListOfPlacesTableCell.self, forCellReuseIdentifier: "listOfPlacesTableCell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.rowHeight = 68
+        tableView.backgroundColor = UIColor(named: "BackgroundColor")
+        tableView.separatorColor = UIColor(named: "ElementsInCellColor")
         tableView.tableHeaderView = UIView()
         return tableView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "BackgroundColor")
         view.addSubview(tableView)
-        navigationController?.navigationBar.prefersLargeTitles = true
-        title = "Places"
-        setupBarButtonItem()
+        setupNavigationBar()
         makeConstraints()
     }
     
-    private func setupBarButtonItem() {
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Places"
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(named: "ElementsColor") as Any]
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "ElementsColor") as Any]
+        navigationController?.navigationBar.tintColor = UIColor(named: "NavigationBarColor")
         let editBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(didTapSort))
         self.navigationItem.rightBarButtonItem = editBarButtonItem
     }
     
     private func makeConstraints() {
         tableView.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-            $0.size.height.equalTo(68)
-            $0.size.width.equalToSuperview()
+            $0.top.bottom.trailing.leading.equalToSuperview()
         }
     }
     
@@ -89,7 +92,10 @@ extension ListOfPlacesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listOfPlacesTableCell", for: indexPath) as! ListOfPlacesTableCell
+        cell.backgroundColor = UIColor(named: "BackgroundColor")
         cell.accessoryType = .disclosureIndicator
+        cell.tintColor = UIColor(named: "ElementsInCellColor")
+        cell.selectionStyle = .none
         let imageName = tupleOfImageNames[indexPath.row].imageName
         cell.cellImageView.image = UIImage(named: imageName)
         cell.cellTitle.text = "Title \(tupleOfImageNames[indexPath.row].index)"

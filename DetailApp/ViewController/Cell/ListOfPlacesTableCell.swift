@@ -12,7 +12,7 @@ class ListOfPlacesTableCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .cyan
+        imageView.backgroundColor = UIColor(named: "ElementsColor")
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 24
         return imageView
@@ -22,6 +22,7 @@ class ListOfPlacesTableCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont(name: "MarkPro-Bold", size: 18)
+        label.textColor = UIColor(named: "TitleColor")
         label.numberOfLines = 0
         return label
     }()
@@ -30,7 +31,7 @@ class ListOfPlacesTableCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont(name: "WorkSans-Regular", size: 16)
-        label.textColor = UIColor.systemGray3
+        label.textColor = UIColor(named: "DescriptionColor")
         label.numberOfLines = 0
         return label
     }()
