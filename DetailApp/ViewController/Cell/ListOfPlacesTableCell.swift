@@ -13,8 +13,8 @@ class ListOfPlacesTableCell: UITableViewCell {
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = .cyan
-        imageView.layer.cornerRadius = 24
         imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 24
         return imageView
     }()
     
@@ -61,7 +61,7 @@ class ListOfPlacesTableCell: UITableViewCell {
     func makeConstraints() {
         cellImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.size.width.height.equalTo(48)
+            $0.size.width.height.equalTo(52)
             $0.leading.equalTo(contentView).offset(20)
         }
         

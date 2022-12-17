@@ -9,39 +9,27 @@ import UIKit
 import SnapKit
 
 class ListOfPlacesViewController: UIViewController {
-    private lazy var tableView = UITableView()
     private lazy var arrayOfImageNames = ["Apartment", "BeachAccess", "BusinessCenter", "Casino", "Checkroom", "FitnessCenter", "House", "MeetingRoom", "Spa", "Storefront"]
     private lazy var tupleOfImageNames = fillTupleOfImageNames()
     
-    private func fillTupleOfImageNames() -> [(imageName: String, index: Int)] {
-        var tupleOfImageNames = [(String, Int)]()
-        for i in 0..<1000 {
-            tupleOfImageNames.append((arrayOfImageNames[i % 10], i))
-        }
-        return tupleOfImageNames
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        setupTableView()
-        setupBarButtonItem()
-    }
-    
-    private func setupTableView() {
-        view.addSubview(tableView)
-        
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(ListOfPlacesTableCell.self, forCellReuseIdentifier: "listOfPlacesTableCell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        
         tableView.rowHeight = 68
-        
+        tableView.tableHeaderView = UIView()
+        return tableView
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        view.addSubview(tableView)
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Places"
-        tableView.tableHeaderView = UIView()
-        
+        setupBarButtonItem()
         makeConstraints()
     }
     
@@ -50,21 +38,33 @@ class ListOfPlacesViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = editBarButtonItem
     }
     
-    @objc func didTapSort() {
-        tableView.isEditing = tableView.isEditing ? false : true
-    }
-    
-    func makeConstraints() {
+    private func makeConstraints() {
         tableView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             $0.size.height.equalTo(68)
             $0.size.width.equalToSuperview()
         }
     }
+    
+    @objc func didTapSort() {
+        tableView.isEditing = tableView.isEditing ? false : true
+    }
+    
+    private func fillTupleOfImageNames() -> [(imageName: String, index: Int)] {
+        var tupleOfImageNames = [(String, Int)]()
+        for i in 0..<1000 {
+            tupleOfImageNames.append((arrayOfImageNames[i % 10], i))
+        }
+        return tupleOfImageNames
+    }
 }
 
 extension ListOfPlacesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsViewController = PlaceDetailViewController()
+        detailsViewController.imageName = tupleOfImageNames[indexPath.row].imageName
+        detailsViewController.index = tupleOfImageNames[indexPath.row].index
+        navigationController?.pushViewController(detailsViewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
