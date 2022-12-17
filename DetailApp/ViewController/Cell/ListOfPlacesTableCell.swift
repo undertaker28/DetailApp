@@ -21,7 +21,7 @@ class ListOfPlacesTableCell: UITableViewCell {
     lazy var cellTitle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "MarkPro-Bold", size: 18)
         label.numberOfLines = 0
         return label
     }()
@@ -29,28 +29,33 @@ class ListOfPlacesTableCell: UITableViewCell {
     lazy var cellDescription: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "WorkSans-Regular", size: 16)
+        label.textColor = UIColor.systemGray3
         label.numberOfLines = 0
         return label
     }()
     
-    private lazy var stackView = UIStackView()
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [cellTitle, cellDescription])
+        stackView.axis = .vertical
+        stackView.spacing = 4
+        stackView.distribution = .equalCentering
+        return stackView
+    }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: "listOfPlacesTableCell")
-        
-        self.addSubview(cellImageView)
-        stackView = UIStackView(arrangedSubviews: [cellTitle, cellDescription])
-        stackView.axis = .vertical
-        stackView.spacing = 10
-        stackView.distribution = .equalCentering
-        self.addSubview(stackView)
-        
+        addSubviews()
         makeConstraints()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func addSubviews() {
+        self.addSubview(cellImageView)
+        self.addSubview(stackView)
     }
     
     func makeConstraints() {

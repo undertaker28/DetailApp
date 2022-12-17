@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BCD3B7BF122EF5BC7C160557 /* Pods_DetailApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA97A4A9BF23AEEB448C944E /* Pods_DetailApp.framework */; };
 		E90663AC294D0B0000D3D179 /* ListOfPlacesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90663AB294D0B0000D3D179 /* ListOfPlacesTableCell.swift */; };
+		E9749664294E048C00674C21 /* MarkPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9749663294E048C00674C21 /* MarkPro-Bold.otf */; };
+		E9749666294E049200674C21 /* WorkSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9749665294E049200674C21 /* WorkSans-Regular.otf */; };
 		E9C1F181294CD324004EF02C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1F180294CD324004EF02C /* AppDelegate.swift */; };
 		E9C1F185294CD324004EF02C /* ListOfPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1F184294CD324004EF02C /* ListOfPlacesViewController.swift */; };
 		E9C1F18A294CD325004EF02C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C1F189294CD325004EF02C /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		A8CF148C4FE08D48F0B8AF28 /* Pods-DetailApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailApp.release.xcconfig"; path = "Target Support Files/Pods-DetailApp/Pods-DetailApp.release.xcconfig"; sourceTree = "<group>"; };
 		E825024760408C969DFC3662 /* Pods-DetailApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailApp.debug.xcconfig"; path = "Target Support Files/Pods-DetailApp/Pods-DetailApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E90663AB294D0B0000D3D179 /* ListOfPlacesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPlacesTableCell.swift; sourceTree = "<group>"; };
+		E9749663294E048C00674C21 /* MarkPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Bold.otf"; sourceTree = "<group>"; };
+		E9749665294E049200674C21 /* WorkSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.otf"; sourceTree = "<group>"; };
 		E9C1F17D294CD324004EF02C /* DetailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C1F180294CD324004EF02C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C1F184294CD324004EF02C /* ListOfPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPlacesViewController.swift; sourceTree = "<group>"; };
@@ -59,12 +63,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		E90663AA294D0AE400D3D179 /* Cells */ = {
+		E90663AA294D0AE400D3D179 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				E90663AB294D0B0000D3D179 /* ListOfPlacesTableCell.swift */,
 			);
-			path = Cells;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E9749662294E047400674C21 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E9749663294E048C00674C21 /* MarkPro-Bold.otf */,
+				E9749665294E049200674C21 /* WorkSans-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		E9C1F174294CD324004EF02C = {
@@ -88,6 +101,7 @@
 		E9C1F17F294CD324004EF02C /* DetailApp */ = {
 			isa = PBXGroup;
 			children = (
+				E9749662294E047400674C21 /* Fonts */,
 				E9C1F194294CDB2B004EF02C /* Applications */,
 				E9C1F196294CDBF0004EF02C /* ViewController */,
 				E9C1F195294CDBD3004EF02C /* SupportingFiles */,
@@ -116,7 +130,7 @@
 		E9C1F196294CDBF0004EF02C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E90663AA294D0AE400D3D179 /* Cells */,
+				E90663AA294D0AE400D3D179 /* Cell */,
 				E9C1F184294CD324004EF02C /* ListOfPlacesViewController.swift */,
 			);
 			path = ViewController;
@@ -192,8 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C1F18D294CD325004EF02C /* LaunchScreen.storyboard in Resources */,
+				E9749664294E048C00674C21 /* MarkPro-Bold.otf in Resources */,
 				E9C1F19A294CE25C004EF02C /* Icons.xcassets in Resources */,
 				E9C1F18A294CD325004EF02C /* Assets.xcassets in Resources */,
+				E9749666294E049200674C21 /* WorkSans-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
