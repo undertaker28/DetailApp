@@ -48,7 +48,7 @@ $ pod install
 
 |  Main view   | Edit mode   | Detail view |
 | ------------ | ----------- | ----------- |
-|  <img src="https://user-images.githubusercontent.com/69767713/208307012-4a461213-43f3-4890-9a14-5c2714f79291.png" width="340" height="636"> | <img src="https://user-images.githubusercontent.com/69767713/208307029-bcfd73ac-0ac8-4bd4-9b6b-61aed4354a03.png" width="340" height="636"> | <img src="https://user-images.githubusercontent.com/69767713/208307044-d3c5a422-30a2-4eec-bf0f-63ffc30617b1.png" width="340" height="636"> |
+|  <img src="https://user-images.githubusercontent.com/69767713/208307012-4a461213-43f3-4890-9a14-5c2714f79291.png" width="340" height="596"> | <img src="https://user-images.githubusercontent.com/69767713/208307029-bcfd73ac-0ac8-4bd4-9b6b-61aed4354a03.png" width="340" height="596"> | <img src="https://user-images.githubusercontent.com/69767713/208307044-d3c5a422-30a2-4eec-bf0f-63ffc30617b1.png" width="340" height="596"> |
 
 </div>
 
@@ -57,7 +57,7 @@ $ pod install
 
 |  Main view   | Edit mode   | Detail view |
 | ------------ | ----------- | ----------- |
-|  <img src="https://user-images.githubusercontent.com/69767713/208307273-150de250-e121-4b62-b969-f7e39ddf898b.png" width="595" height="220"> | <img src="https://user-images.githubusercontent.com/69767713/208307299-d73d103d-a4f7-4b1e-b659-e819988cb32a.png" width="595" height="220"> | <img src="https://user-images.githubusercontent.com/69767713/208307314-15a3fa8e-3fb9-4937-90b2-0e65c583ad1d.png" width="595" height="220"> |
+|  <img src="https://user-images.githubusercontent.com/69767713/208307273-150de250-e121-4b62-b969-f7e39ddf898b.png" width="595" height="180"> | <img src="https://user-images.githubusercontent.com/69767713/208307299-d73d103d-a4f7-4b1e-b659-e819988cb32a.png" width="595" height="180"> | <img src="https://user-images.githubusercontent.com/69767713/208307314-15a3fa8e-3fb9-4937-90b2-0e65c583ad1d.png" width="595" height="180"> |
 
 </div>
 
@@ -67,7 +67,7 @@ $ pod install
 
 |  Main view   | Edit mode   | Detail view |
 | ------------ | ----------- | ----------- |
-|  <img src="https://user-images.githubusercontent.com/69767713/208307509-7b9060ed-522f-41a8-86db-2784405dab0d.png" width="340" height="636"> | <img src="https://user-images.githubusercontent.com/69767713/208307516-69d95583-4b8a-49ed-8f6f-f507ec55a844.png" width="340" height="636"> | <img src="https://user-images.githubusercontent.com/69767713/208307535-1a1a27a7-a2ee-4239-a37c-655a80223bbe.png" width="340" height="636"> |
+|  <img src="https://user-images.githubusercontent.com/69767713/208307509-7b9060ed-522f-41a8-86db-2784405dab0d.png" width="340" height="596"> | <img src="https://user-images.githubusercontent.com/69767713/208307516-69d95583-4b8a-49ed-8f6f-f507ec55a844.png" width="340" height="596"> | <img src="https://user-images.githubusercontent.com/69767713/208307535-1a1a27a7-a2ee-4239-a37c-655a80223bbe.png" width="340" height="596"> |
 
 </div>
 
@@ -76,7 +76,7 @@ $ pod install
 
 |  Main view   | Edit mode   | Detail view |
 | ------------ | ----------- | ----------- |
-|  <img src="https://user-images.githubusercontent.com/69767713/208307924-40bce601-c9df-4d9f-b8f5-84d5b408c25d.png" width="595" height="220"> | <img src="https://user-images.githubusercontent.com/69767713/208307551-954627cd-3262-4fe5-a8b2-404672ddb7f1.png" width="595" height="220"> | <img src="https://user-images.githubusercontent.com/69767713/208307555-b61d80ee-4cd0-494a-8108-1c3418ad0424.png" width="595" height="220"> |
+|  <img src="https://user-images.githubusercontent.com/69767713/208307924-40bce601-c9df-4d9f-b8f5-84d5b408c25d.png" width="595" height="180"> | <img src="https://user-images.githubusercontent.com/69767713/208307551-954627cd-3262-4fe5-a8b2-404672ddb7f1.png" width="595" height="180"> | <img src="https://user-images.githubusercontent.com/69767713/208307555-b61d80ee-4cd0-494a-8108-1c3418ad0424.png" width="595" height="180"> |
 
 </div>
 
@@ -86,7 +86,7 @@ $ pod install
 
 |  Main view   | Edit mode   | Detail view |
 | ------------ | ----------- | ----------- |
-|  <img src="https://user-images.githubusercontent.com/69767713/208307699-e5c4986e-02f2-47dc-8b5d-2a7d0df38a9e.png" width="340" height="636"> | <img src="https://user-images.githubusercontent.com/69767713/208307711-c0adda82-25fe-423a-8b51-244c0768107c.png" width="340" height="636"> | <img src="https://user-images.githubusercontent.com/69767713/208307720-15abdd42-d828-4b97-aa06-8f5cf5688f69.png" width="340" height="636"> |
+|  <img src="https://user-images.githubusercontent.com/69767713/208307699-e5c4986e-02f2-47dc-8b5d-2a7d0df38a9e.png" width="340" height="596"> | <img src="https://user-images.githubusercontent.com/69767713/208307711-c0adda82-25fe-423a-8b51-244c0768107c.png" width="340" height="596"> | <img src="https://user-images.githubusercontent.com/69767713/208307720-15abdd42-d828-4b97-aa06-8f5cf5688f69.png" width="340" height="596"> |
 
 </div>
 
@@ -95,7 +95,7 @@ $ pod install
 
 |  Main view   | Edit mode   | Detail view |
 | ------------ | ----------- | ----------- |
-|  <img src="https://user-images.githubusercontent.com/69767713/208307732-39931518-258e-4cfd-bfa3-a8c7fcfb88a9.png" width="595" height="220"> | <img src="https://user-images.githubusercontent.com/69767713/208307740-07475fe1-18c8-4fdb-b42c-5a32206266e8.png" width="595" height="220"> | <img src="https://user-images.githubusercontent.com/69767713/208307748-a7975e49-8142-4cf7-94e5-9a6eb8b84ed2.png" width="595" height="220"> |
+|  <img src="https://user-images.githubusercontent.com/69767713/208307732-39931518-258e-4cfd-bfa3-a8c7fcfb88a9.png" width="595" height="180"> | <img src="https://user-images.githubusercontent.com/69767713/208307740-07475fe1-18c8-4fdb-b42c-5a32206266e8.png" width="595" height="180"> | <img src="https://user-images.githubusercontent.com/69767713/208307748-a7975e49-8142-4cf7-94e5-9a6eb8b84ed2.png" width="595" height="180"> |
 
 </div>
 
@@ -105,7 +105,7 @@ $ pod install
 
 |  Main view   | Edit mode   | Detail view |
 | ------------ | ----------- | ----------- |
-|  <img src="https://user-images.githubusercontent.com/69767713/208307999-e75a072a-c2d4-43f3-9295-393e0b4cf2fd.png" width="340" height="636"> | <img src="https://user-images.githubusercontent.com/69767713/208308012-0b1ade0d-307d-4859-95ae-2d8aae8307e3.png" width="340" height="636"> | <img src="https://user-images.githubusercontent.com/69767713/208308016-f9f44ad9-a873-4593-9ead-7c772cd8e796.png" width="340" height="636"> |
+|  <img src="https://user-images.githubusercontent.com/69767713/208307999-e75a072a-c2d4-43f3-9295-393e0b4cf2fd.png" width="340" height="596"> | <img src="https://user-images.githubusercontent.com/69767713/208308012-0b1ade0d-307d-4859-95ae-2d8aae8307e3.png" width="340" height="596"> | <img src="https://user-images.githubusercontent.com/69767713/208308016-f9f44ad9-a873-4593-9ead-7c772cd8e796.png" width="340" height="596"> |
 
 </div>
 
@@ -114,7 +114,7 @@ $ pod install
 
 |  Main view   | Edit mode   | Detail view |
 | ------------ | ----------- | ----------- |
-|  <img src="https://user-images.githubusercontent.com/69767713/208308030-a2bb4c75-826d-46ae-bff7-95f98c5d4ef5.png" width="595" height="220"> | <img src="https://user-images.githubusercontent.com/69767713/208308042-dd96e6f9-607d-4097-98f2-d26ea636484f.png" width="595" height="220"> | <img src="https://user-images.githubusercontent.com/69767713/208308052-48bca49e-01c0-4b24-abbc-3e4632c6ffb3.png" width="595" height="220"> |
+|  <img src="https://user-images.githubusercontent.com/69767713/208308030-a2bb4c75-826d-46ae-bff7-95f98c5d4ef5.png" width="595" height="180"> | <img src="https://user-images.githubusercontent.com/69767713/208308042-dd96e6f9-607d-4097-98f2-d26ea636484f.png" width="595" height="180"> | <img src="https://user-images.githubusercontent.com/69767713/208308052-48bca49e-01c0-4b24-abbc-3e4632c6ffb3.png" width="595" height="180"> |
 
 </div>
 
