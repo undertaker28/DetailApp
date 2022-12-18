@@ -107,9 +107,9 @@
 		E9C1F17F294CD324004EF02C /* DetailApp */ = {
 			isa = PBXGroup;
 			children = (
-				E9749662294E047400674C21 /* Fonts */,
 				E9C1F194294CDB2B004EF02C /* Applications */,
 				E9C1F196294CDBF0004EF02C /* ViewController */,
+				E9749662294E047400674C21 /* Fonts */,
 				E9C1F195294CDBD3004EF02C /* SupportingFiles */,
 			);
 			path = DetailApp;

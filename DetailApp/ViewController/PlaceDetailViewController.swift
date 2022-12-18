@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PlaceDetailViewController: UIViewController {
+final class PlaceDetailViewController: UIViewController {
     lazy var imageName = ""
     lazy var index = 0
     
@@ -41,7 +41,7 @@ class PlaceDetailViewController: UIViewController {
         let stackView = UIStackView(arrangedSubviews: [titleLabel, descriptionLabel])
         stackView.axis = .vertical
         stackView.spacing = 4
-        stackView.distribution = .fillProportionally
+        stackView.distribution = .fillEqually
         stackView.alignment = .center
         return stackView
     }()
@@ -74,8 +74,7 @@ class PlaceDetailViewController: UIViewController {
     
     private func makeConstraints() {
         placeImageView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(150)
-            $0.centerX.equalToSuperview()
+            $0.centerX.centerY.equalToSuperview()
             $0.width.height.equalTo(104)
         }
         

@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ListOfPlacesViewController: UIViewController {
+final class ListOfPlacesViewController: UIViewController {
     private lazy var tupleOfImageNames = fillTupleOfImageNames()
     
     private lazy var tableView: UITableView = {
@@ -38,8 +38,8 @@ class ListOfPlacesViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(named: "ElementsColor") as Any]
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "ElementsColor") as Any]
         navigationController?.navigationBar.tintColor = UIColor(named: "NavigationBarColor")
-        let editBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(didTapSort))
-        self.navigationItem.rightBarButtonItem = editBarButtonItem
+        let editBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(didTapEdit))
+        navigationItem.rightBarButtonItem = editBarButtonItem
     }
     
     private func makeConstraints() {
@@ -48,10 +48,11 @@ class ListOfPlacesViewController: UIViewController {
         }
     }
     
-    @objc func didTapSort() {
+    @objc func didTapEdit() {
         tableView.isEditing = tableView.isEditing ? false : true
     }
     
+    // MARK: - Tuple to ensure that indexing doesn't get lost when deleting an element
     private func fillTupleOfImageNames() -> [(imageName: String, index: Int)] {
         var tupleOfImageNames = [(String, Int)]()
         for i in 0..<1000 {

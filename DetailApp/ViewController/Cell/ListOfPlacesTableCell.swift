@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListOfPlacesTableCell: UITableViewCell {
+final class ListOfPlacesTableCell: UITableViewCell {
     lazy var cellImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
