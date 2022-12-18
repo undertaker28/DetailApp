@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 final class ListOfPlacesViewController: UIViewController {
-    private lazy var tupleOfImageNames = fillTupleOfImageNames()
+    private lazy var tupleOfImageNames = TupleOfImageNames().tupleOfImageNames
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -50,15 +50,6 @@ final class ListOfPlacesViewController: UIViewController {
     
     @objc func didTapEdit() {
         tableView.isEditing = tableView.isEditing ? false : true
-    }
-    
-    // MARK: - Tuple to ensure that indexing doesn't get lost when deleting an element
-    private func fillTupleOfImageNames() -> [(imageName: String, index: Int)] {
-        var tupleOfImageNames = [(String, Int)]()
-        for i in 0..<1000 {
-            tupleOfImageNames.append((ImageNames.arrayOfImageNames[i % 10], i))
-        }
-        return tupleOfImageNames
     }
 }
 

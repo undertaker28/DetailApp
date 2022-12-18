@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		BCD3B7BF122EF5BC7C160557 /* Pods_DetailApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA97A4A9BF23AEEB448C944E /* Pods_DetailApp.framework */; };
 		E90663AC294D0B0000D3D179 /* ListOfPlacesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90663AB294D0B0000D3D179 /* ListOfPlacesTableCell.swift */; };
+		E9226AF4294FAE6A005D897C /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9226AF3294FAE6A005D897C /* DataModel.swift */; };
+		E9226AF6294FAE76005D897C /* TupleOfImageNamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9226AF5294FAE76005D897C /* TupleOfImageNamesModel.swift */; };
+		E9226AF9294FAEA0005D897C /* FillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9226AF8294FAEA0005D897C /* FillData.swift */; };
 		E9749664294E048C00674C21 /* MarkPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9749663294E048C00674C21 /* MarkPro-Bold.otf */; };
 		E9749666294E049200674C21 /* WorkSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9749665294E049200674C21 /* WorkSans-Regular.otf */; };
 		E9749668294E17CA00674C21 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9749667294E17CA00674C21 /* PlaceDetailViewController.swift */; };
@@ -25,6 +28,9 @@
 		A8CF148C4FE08D48F0B8AF28 /* Pods-DetailApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailApp.release.xcconfig"; path = "Target Support Files/Pods-DetailApp/Pods-DetailApp.release.xcconfig"; sourceTree = "<group>"; };
 		E825024760408C969DFC3662 /* Pods-DetailApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailApp.debug.xcconfig"; path = "Target Support Files/Pods-DetailApp/Pods-DetailApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E90663AB294D0B0000D3D179 /* ListOfPlacesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPlacesTableCell.swift; sourceTree = "<group>"; };
+		E9226AF3294FAE6A005D897C /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		E9226AF5294FAE76005D897C /* TupleOfImageNamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TupleOfImageNamesModel.swift; sourceTree = "<group>"; };
+		E9226AF8294FAEA0005D897C /* FillData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillData.swift; sourceTree = "<group>"; };
 		E9749663294E048C00674C21 /* MarkPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Bold.otf"; sourceTree = "<group>"; };
 		E9749665294E049200674C21 /* WorkSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.otf"; sourceTree = "<group>"; };
 		E9749667294E17CA00674C21 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		E9226AF2294FAE5C005D897C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9226AF3294FAE6A005D897C /* DataModel.swift */,
+				E9226AF5294FAE76005D897C /* TupleOfImageNamesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9226AF7294FAE96005D897C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9226AF8294FAEA0005D897C /* FillData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E9749662294E047400674C21 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +132,8 @@
 			children = (
 				E9C1F194294CDB2B004EF02C /* Applications */,
 				E9C1F196294CDBF0004EF02C /* ViewController */,
+				E9226AF2294FAE5C005D897C /* Model */,
+				E9226AF7294FAE96005D897C /* Services */,
 				E9749662294E047400674C21 /* Fonts */,
 				E9C1F195294CDBD3004EF02C /* SupportingFiles */,
 			);
@@ -274,9 +299,12 @@
 			files = (
 				E974966A294E66F200674C21 /* Constants.swift in Sources */,
 				E90663AC294D0B0000D3D179 /* ListOfPlacesTableCell.swift in Sources */,
+				E9226AF9294FAEA0005D897C /* FillData.swift in Sources */,
 				E9749668294E17CA00674C21 /* PlaceDetailViewController.swift in Sources */,
 				E9C1F185294CD324004EF02C /* ListOfPlacesViewController.swift in Sources */,
 				E9C1F181294CD324004EF02C /* AppDelegate.swift in Sources */,
+				E9226AF4294FAE6A005D897C /* DataModel.swift in Sources */,
+				E9226AF6294FAE76005D897C /* TupleOfImageNamesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
